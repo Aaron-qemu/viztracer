@@ -567,5 +567,8 @@ def main():
         if not success:
             print(err_msg)
             sys.exit(1)
+      except NameError:
+        print("error: please use vizviewer open json file")
+        
     finally:
         atexit._run_exitfuncs()
